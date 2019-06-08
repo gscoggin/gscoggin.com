@@ -14,11 +14,22 @@ class App extends Component {
   
   drawerToggleClickHandler = () => {
     this.setState((prevState) => {
-      return {sideDrawerOpen: !prevState}
-    })
+      return {sideDrawerOpen: !prevState.sideDrawerOpen};
+    });
+  };
+
+  backDropClickHandler = () => {
+    this.setState({sideDrawerOpen: false});
   };
 
   render() {
+  let sideDrawer;
+  let backDrop;  
+
+  if (this.state.sideDrawerOpen) {
+    sideDrawer = <SideDrawer />;
+    backDrop = <Backdrop click={this.backDropClickHandler}/>
+  }
   return (
     <div className="App">
       {/* <nav className="Nav-bar>">
@@ -38,9 +49,10 @@ class App extends Component {
           Learn React
         </a>
       </header> */}
-      <Toolbar />
-      <SideDrawer />
-      <Backdrop />
+      <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
+      {sideDrawer}
+      {backDrop}
+      
       <main style={{marginTop: '64px'}}>
         <p>This is the page content!</p>
       </main>
