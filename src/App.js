@@ -1,14 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
 
-function App() {
+import Toolbar from './components/Toolbar/Toolbar';
+import SideDrawer from './components/SideDrawer/SideDrawer';
+import Backdrop from './components/Backdrop/Backdrop';
+import drawerToggleButton from './components/SideDrawer/DrawerToggleButton';
+// import logo from './logo.svg';
+// import './App.css';
+
+class App extends Component {
+  state = {
+    sideDrawerOpen: false
+  };
+  
+  drawerToggleClickHandler = () => {
+    this.setState((prevState) => {
+      return {sideDrawerOpen: !prevState}
+    })
+  };
+
+  render() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <nav className="Nav-bar>">
+        What's here
+      </nav>
+      <header className="App-header">Test
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Banana <code>src/App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
@@ -18,9 +37,16 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      <Toolbar />
+      <SideDrawer />
+      <Backdrop />
+      <main style={{marginTop: '64px'}}>
+        <p>This is the page content!</p>
+      </main>
     </div>
   );
+}
 }
 
 export default App;
