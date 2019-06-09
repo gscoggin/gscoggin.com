@@ -8,6 +8,12 @@
   width: 70%;
   max-width: 400px;
   z-index: 200;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+}
+
+.side-drawer.open {
+  transform: translateX(0);
 }
 
 .side-drawer ul {
@@ -32,3 +38,10 @@
 .side-drawer a:active {
   color: orangered;
 } 
+
+@media (min-width: 796px) {
+  .side-drawer {
+    display: none;
+  
+  }
+}

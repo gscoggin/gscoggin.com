@@ -23,11 +23,9 @@ class App extends Component {
   };
 
   render() {
-  let sideDrawer;
   let backDrop;  
 
   if (this.state.sideDrawerOpen) {
-    sideDrawer = <SideDrawer />;
     backDrop = <Backdrop click={this.backDropClickHandler}/>
   }
   return (
@@ -50,7 +48,7 @@ class App extends Component {
         </a>
       </header> */}
       <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
-      {sideDrawer}
+      <SideDrawer show={this.state.sideDrawerOpen}/>;
       {backDrop}
       
       <main style={{marginTop: '64px'}}>

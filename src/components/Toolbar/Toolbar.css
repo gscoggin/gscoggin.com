@@ -50,3 +50,15 @@
 .toolbar_navigation-items a:active {
   color: orangered;
 }
+
+@media (max-width: 768px) {
+  .toolbar_navigation-items {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .toolbar__toggle-button {
+    display: none;
+  }
+}
