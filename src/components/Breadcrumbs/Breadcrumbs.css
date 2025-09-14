@@ -1,0 +1,25 @@
+.breadcrumb-nav {
+  margin-top: 20px;
+}
+
+.breadcrumb-link {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 4px 0;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.breadcrumb-link:hover {
+  color: #333;
+  font-weight: 600;
+}
+
+.breadcrumb-separator {
+  color: #666;
+  margin: 0 8px;
+}
