@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
 import './Hero.css';
 
 const Hero = ({ 

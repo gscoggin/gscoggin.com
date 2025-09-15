@@ -209,15 +209,16 @@ body {
 
 .hero-subtitle {
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 1.5rem;
   color: #475569;
 }
 
 .hero-description {
   font-size: 1.1rem;
+  font-weight: 500;
   margin-bottom: 2.5rem;
-  color: #64748b;
+  color: #475569;
   line-height: 1.6;
   max-width: 600px;
   margin-left: auto;
