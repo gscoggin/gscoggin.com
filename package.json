@@ -2,6 +2,9 @@
   "name": "gscoggin.com",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://gabescoggin.com",
+  "description": "The personal website of Gabe Scoggin",
+  "author": "Gabe Scoggin <gabe@gscoggin.com>",
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1",

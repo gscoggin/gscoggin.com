@@ -34,8 +34,6 @@ export const useTypewriter = () => {
     typingText,
     startTypewriter,
     markAsTyped,
-    hasTyped,
-    typedSections,
-    setTypedSections
+    hasTyped
   };
 };

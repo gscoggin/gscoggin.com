@@ -81,13 +81,11 @@ const App = () => {
   ];
 
   // Custom hooks for animations
-  const { 
-    typingText, 
-    startTypewriter, 
-    markAsTyped, 
-    hasTyped, 
-    typedSections,
-    setTypedSections 
+  const {
+    typingText,
+    startTypewriter,
+    markAsTyped,
+    hasTyped
   } = useTypewriter();
 
   const {
